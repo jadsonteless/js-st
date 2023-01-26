@@ -1,0 +1,48 @@
+<!--
+    Variaveis e seu conceitos
+   
+    # Regra do +
+        Se (number + number) ele somar
+        Se (string + string) ele concatena
+
+        ! Por padrao os dados fornecido em numero pelo usuario são apresentados em string
+        ! Então para realizar uma soma é necessario realizar uma conversão
+
+    # Conversão para number
+        Number.parseInt(n) -> para numero inteiros 
+        Number.parseFloat(n) -> para numeros com virgulas
+        Number(n) -> o js quem decide se é inteiro ou com virgula
+
+    # Conversão para string
+        String(n) -> realizar a conversao
+        n.toString() -> converte porem pode ser adicionado no final
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variavel e seus conceitos</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellowgreen;
+        }
+        p {
+            color: white;
+        }
+    </style>
+    <script>
+        var clt = Number(window.prompt('Seu salario CLT?'))
+        var auto = Number(window.prompt('Sua renda autonoma?'))
+        var rendaTotal = clt + auto
+        window.alert('Sua renda total é ' + rendaTotal + '🤑')
+    </script>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Descrição lorem teste</p>
+</body>
+</html>
