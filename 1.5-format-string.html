@@ -1,0 +1,56 @@
+<!--
+    Formatação de String
+
+        - .length // conta caracteres da string
+        - .toUpperCase() // deixa a string em maiúsculo
+        - .toLowerCase() // deixa a string em minusculo
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS - Guanabara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: yellowgreen;
+            font: normal 20pt Arial;
+            
+        }
+        header {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255, 0, 0, 0.336);
+            border-radius: 10px;
+            justify-content: space-between;
+            gap: 48px;
+            margin-top: 50vh;
+            padding: 0 120px;
+
+
+        }
+        p {
+            color: white;
+        }
+    </style>
+    <script>
+       var nome = window.prompt('Qual seu nome?')
+       document.write(`Olá, <strong>${nome}!</strong> seu nome possui ${nome.length} caracteres<br>`)
+       document.writeln(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br>`)
+       document.write(`Seu nome em minusculo é ${nome.toLowerCase()}`)
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hello World!</h1>
+        <p>Page de patratica Javascript</p>
+    </header>
+</body>
+</html>

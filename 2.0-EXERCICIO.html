@@ -1,0 +1,82 @@
+<!--
+    ATIVIDADE PARA PRATICAR 01
+
+    Criar uma sequência de pergunta mostrando oque foi recebindo pelo usuario.
+
+    # Objetivo:
+        - [x] guarda os dados do usuario dentro da var (garagem).
+        - [x] apresenta no browser a var com seu conteudo guardado.
+        - [X] fazer a soma de dois valores fornecido pelo usuario.
+        - [X] Escrever no document todas as string e numb coletado
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS - Guanabara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: yellowgreen;
+            
+        }
+        header {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255, 0, 0, 0.336);
+            border-radius: 10px;
+            justify-content: space-between;
+            gap: 48px;
+            margin-top: 50vh;
+            padding: 0 120px;
+
+
+        }
+        p {
+            color: white;
+        }
+    </style>
+    <script>
+        var nome = window.prompt('Oi! Seu primeiro nome? para começar 🤣') // dispara pop-up digitavel para usuario.
+        window.confirm('Ok, seu nome é ' + nome + ' correto?!!') // + faz a concatenação.
+        var sexo = window.prompt('Seu sexo? Masculino ou Feminino? não fica em duvida nessa💡')
+        var idade = window.prompt('Mais uma coisa, sua idade ? não irei fazer piadas 😊')
+        window.alert('já estou acabado só me responde mais uma coisa')
+        var clt = Number(window.prompt('Quanto é sua renda fixa mensal?'))
+        var auto = Number(window.prompt('E quanto você em renda extra mensal?'))
+        var rendaTotal = clt + auto
+        window.confirm(`Então sua renda em CLT é ${clt} e seu extra é ${auto}?`)
+        window.alert('Obrigado! prometo que não irei te roubar!🤖😇')
+        // A ordem na linha de codigo muda a sequencia das perguntas.
+        document.write(`
+                        Olá, <trong>${nome}</strong>! segue a baixo suas informações.<br>
+                        <br>
+                        Nome: ${nome}<br>
+                        Nome contém: ${nome.length} caracteres<br>
+                        Idade: ${idade} anos<br>
+                        Sexo: ${sexo}<br>
+                        Reda Bruta: ${rendaTotal}<br>
+                        <br>
+                        FORMATAÇÃO DO NOME:<br>
+                        Maiscúlo: ${nome.toUpperCase()}<br>
+                        Minúsculo: ${nome.toLowerCase()}<br>
+                        <br>
+                        FORMATAÇÃO RENDA PT-BR<br>
+                        Renda Bruta: ${rendaTotal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}
+                        `)
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hello World!</h1>
+        <p>Page de Pratica Javascript</p>
+    </header>
+</body>
+</html>
